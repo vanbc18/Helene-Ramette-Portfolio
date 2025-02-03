@@ -1,0 +1,296 @@
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  :root {
+    --blue: #2a3663;
+    --gold: #ac8435;
+    --white1: #ebe1d0;
+    --white2: #d6c9b3;
+    --white3: #f7f2e9;
+    --lightgrey: #9b968f;
+    --black1: #2b292b;
+    --black2: #403c34;
+    --titleFont: "Cinzel Decorative", serif;
+    --txtFont: Gabarito, serif;
+  }
+  
+/* shared across all pages */
+  body {
+    font-family: var(--txtFont);
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    background-color: var(--white2);
+    color: var(--black1);
+  }
+
+  h3, h4 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h2, p {
+    margin: 0;
+  }
+
+  .icon {
+    position: relative;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    vertical-align: baseline;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  
+  .margin-left {
+      margin-left: 10px;
+  }
+  
+  .margin-right {
+      margin-right: 10px;
+  }
+
+  .padding-top {
+    padding-top: 30px;
+  }
+
+  .gold-button {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white3);
+  background-color: var(--gold);
+  filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+}
+
+.project-titles {
+    font-family: var(--titleFont);
+    font-size: 20px;
+  }
+
+/* Delia page */
+
+#issue-description {
+    margin: 30px 0;
+}
+
+header {
+    display: flex;
+    top: 0;
+    position: absolute;
+    width: 85.5vw;
+    padding: 0 100px;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+    background-color: var(--white3);
+    z-index: 15;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .back-button {
+    background-color: var(--white1);
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 8vw;
+    font-weight: 700;
+    color: var(--blue);
+    text-decoration: none;
+    filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+}
+
+#delia-background {
+    display: flex;
+    width: 100%;
+    min-height: 800px;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--white2);
+    overflow: hidden;
+}
+
+#delia-intro {
+    max-width: 655px;
+    top: 50px;
+    padding-left: 100px;
+}
+
+#delia-title {
+        font-size: 32px;
+        color: var(--blue);
+        font-weight: 700;
+        margin: 50px 0;
+}
+
+.img-container-mac {
+    padding: 100px 0;
+    z-index: 0;
+   /* border: 1px solid var(--black1);*/
+    overflow: hidden;
+}
+
+.image-container, .delia-img {
+    width: 100%;
+    height: auto;
+}
+
+.full-width {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+#frise-delia {
+    width: 90%;
+}
+
+#delia-description {
+    font-size: 24px;
+    color: var(--black1);
+    margin: 0 0 50px 0;
+}
+
+#delia-arrow {
+    position: absolute;
+    left: 50%;
+    top: 108%;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin-bottom: 30px;
+}
+
+#delia-issues, #client-type, #project-type {
+    margin: 30px 0;
+}
+
+#my-role {
+    font-weight: normal;
+    margin: 0;
+}
+
+.padding {
+    padding: 0 200px;
+}
+
+#project-purpose, #delia-journey, #delia-prototype, .txt-link {
+    display: grid;
+    row-gap: 30px;
+}
+
+#delia-journey, #project-purpose, .txt-link {
+    margin-bottom: 30px;
+}
+
+/* project footer */
+.project-rect {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--white3);
+    z-index: 50;
+    background-color: var(--blue);
+    filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+  }
+  
+  .blue-bg-color {
+    background-color: var(--blue);
+  }
+  
+  .gold-bg-color {
+    background-color: var(--gold);
+  }
+
+  .resize {
+    max-width: 155px;
+  }
+
+  /*project navigation footer*/
+.project-nav {
+    position: fixed;
+    display: grid;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #FFFFFF;
+    z-index: 9;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.contact-button {
+  display: inline-block;
+  filter: drop-shadow(-0.2rem 0.3rem 4px var(--black1));
+  margin-bottom: 16px;
+}
+
+/* footer */
+footer {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    padding: 40px 100px 0 100px;
+    background-color: var(--black2);
+    color: var(--white3);
+    min-height: 150px;
+  }
+  
+  .footer-title {
+    font-family: var(--titleFont);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0 0 32px 0;
+  }
+  
+  .footer-rules {
+      font-size: 16px;
+      border-bottom: 1px solid var(--white3);
+      margin-right: 20px;
+      padding: 5px 10px;
+  }
+}

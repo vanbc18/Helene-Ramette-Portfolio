@@ -1,0 +1,342 @@
+/* Large devices (desktops, 992px and up) */
+:root {
+  --blue: #2a3663;
+  --gold: #ac8435;
+  --white1: #ebe1d0;
+  --white2: #d6c9b3;
+  --white3: #f7f2e9;
+  --lightgrey: #9b968f;
+  --black1: #2b292b;
+  --black2: #403c34;
+  --titleFont: "Cinzel Decorative", serif;
+  --txtFont: Gabarito, serif;
+}
+
+@media (min-width: 992px) {
+  
+/* shared across all pages */
+  body {
+    font-family: var(--txtFont);
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    background-color: var(--white3);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .icon {
+    position: relative;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    vertical-align: baseline;
+  }
+  
+  .margin-left {
+      margin-left: 10px;
+  }
+
+  .margin-right {
+    margin-right: 10px;
+}
+  
+  .small-margin-bottom {
+    margin-bottom: 30px;
+  }
+  
+  .centered {
+      justify-items: center;
+      justify-self: center;
+  }
+  
+  .y-centered {
+    align-self: center;
+    align-items: center;
+  }
+  
+  .gold-button {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white3);
+  filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+  background-color: var(--gold);
+  }
+
+  /* about page */
+
+header {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    padding: 0 100px;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+    z-index: 15;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .back-button {
+    background-color: var(--white1);
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 8vw;
+    font-weight: 700;
+    color: var(--blue);
+    text-decoration: none;
+    filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+}
+  
+  #about-intro-background {
+      display: flex;
+      background-image: url(/Photo\ BG\ About\ LN.png);
+      background-size: contain;
+      background-color: #5D5349;
+      background-repeat: no-repeat;
+      background-position: 15%;
+      margin: 80px 0 0 0;
+      max-height: 600px;
+      max-width: 100%;
+  }
+  
+  #about-intro {
+    position: relative;
+      max-width: 100%;
+      color: var(--white1);
+      left: 50%;
+      margin: 100px 0;
+      max-height: 700px;
+  }
+  
+  #about-title {
+      font-family: var(--titleFont);
+      font-size: 64px;
+  }
+  
+  #bio {
+      font-size: 16px;
+      width: 500px;
+  }
+  
+  .bio-icon {
+    position: relative;
+    right: 23px;
+    top: 7px;
+  }
+  
+  #business-logos {
+    max-width: 100%;
+    padding: 0 100px;
+  }
+  
+  #legit-clients {
+    font-family: var(--titleFont);
+    font-size: 32px;
+    color: var(--black2);
+  }
+  
+  #about-main {
+    display: grid;
+  }
+  
+  #why-not-you {
+    font-family: var(--titleFont);
+    font-size: 20px;
+    color: var(--black2);
+    text-align: center;
+  }
+  
+  #business-options {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .business-option {
+    align-content: center;
+    padding: 0 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 40px 300px;
+    grid-template-columns: 300px;
+  }
+  
+  .target-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--black1);
+    background-color: var(--white2);
+    padding: 10px 20px;
+    border: none;
+    font-family: var(--txtFont);
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 600;
+    border-radius: 2px;
+    filter: drop-shadow(-0.2rem 0.3rem 4px var(--lightgrey));
+  }
+  
+  .services-description {
+    justify-content: center;
+    padding: 0 100px;
+    background-color: var(--black1);
+    color: var(--white3);
+  }
+  
+  .clicktoshow{
+      cursor: pointer;
+  }
+  
+  .showclick{
+      display: none;
+  }
+  
+  #agency-services-list, #startup-services-list {
+    display: grid;
+    grid-template-columns: 630px 1fr;
+    column-gap: 50px;
+    max-width: 100%;
+    padding-left: 20%;
+  }
+  
+  .project-titles {
+    font-family: var(--titleFont);
+    font-size: 20px;
+  }
+  
+  #project-pics {
+    margin: 50px 0 30px 0;
+  }
+  
+  .delia-pics {
+    width: 100%;
+  }
+  
+  .title-grid {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    grid-template-rows: 40px;
+    align-items: center;
+  }
+
+#startup-sneak-peek-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+  
+  #cv ul {
+    list-style-type: none;
+    font-size: 14px;
+  }
+  
+  #cv li {
+    margin-bottom: 15px;
+  }
+  
+  #cv {
+    width: 100%;
+    background-color: var(--black1);
+    color: var(--white3);
+  }
+  
+  ul#years {
+    padding-left: 100px;
+  }
+  
+  ul#formations-list {
+    padding-left: 25px;
+  }
+  
+  .cv-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  #cv-buttons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 310px 310px;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  .about-move-mobile {
+    width: 17vw;
+  }
+
+  .tel-icon {
+    position: relative;
+    left: 10px;
+  }
+
+  .beige-button {
+    background-color: var(--white2);
+    color: var(--blue);
+    text-transform: uppercase;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .target-description {
+    min-height: 200px;
+    margin: 0;
+    padding: 30px 40px;
+    border: 1px solid var(--black1);
+  }
+
+  /* footer */
+footer {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    padding: 40px 100px 0 100px;
+    background-color: var(--black2);
+    color: var(--white3);
+    min-height: 150px;
+  }
+  
+  .footer-title {
+    font-family: var(--titleFont);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0 0 32px 0;
+  }
+  
+  .footer-rules {
+      font-size: 16px;
+      border-bottom: 1px solid var(--white3);
+      margin-right: 20px;
+      padding: 5px 10px;
+  }
+  
+  .contact-button {
+      display: inline-block;
+      filter: drop-shadow(-0.2rem 0.3rem 4px var(--black1));
+  }
+}
