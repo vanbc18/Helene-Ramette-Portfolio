@@ -106,7 +106,7 @@ header {
   
   #about-intro-background {
       display: flex;
-      background-image: url(Photo\ BG\ About\ LN.png);
+      background-image: url(/Photo-BG-About-LN.png);
       background-size: contain;
       background-color: #5D5349;
       background-repeat: no-repeat;
