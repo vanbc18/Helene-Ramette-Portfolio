@@ -9,11 +9,12 @@
     --black1: #2b292b;
     --black2: #403c34;
     --titleFont: "Cinzel Decorative", serif;
+    --txt: "Gabarito", serif;
   }
   
   /* Homepage */
   body {
-    font-family: Gabarito, serif;
+    font-family: var(--txt);
     width: 100%;
     z-index: 0;
     margin: 0;
@@ -112,8 +113,7 @@
   /* slider content */
   
   #loi-du-film,
-  #coming-soon1,
-  #coming-soon2 {
+  #coming-soon1 {
     position: absolute;
     z-index: 3;
     padding: 7%;
@@ -128,15 +128,67 @@
     color: var(--blue);
     z-index: 3;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .icon-title {
+    position: relative;
+    color: var(--blue);
+    z-index: 3;
+    margin: 0;
+    width: 5vw;
+    height: 4vw;
+  }
+
+  #coming-soon2 {
+    position: relative;
+    background-color: var(--white2) !important;
+    height: fit-content;
+    padding: 7%;
+  }
+
+  #coming-soon2 h1 {
+    left: -7%;
+    justify-content: center !important;
+  }
+
+  #coming-soon2 h2 {
+    position: relative;
+    font-size: 1.3vw;
+    font-weight: 700;
+    width: 100%;
+    color: var(--black1) !important;
+    z-index: 5 !important;
+    text-transform: uppercase;
+    margin: 80px 0 20px 0 !important;
   }
   
-  .descriptions {
+  .beta, .descriptions {
     position: relative;
     z-index: 3;
     max-width: 40%;
     font-size: 1.5vw;
     line-height: 7vh;
+    
+  }
+
+  .descriptions {
+    max-width: 40%;
     margin: 3.9% 0;
+  }
+
+  .beta {
+    max-width: 70vw !important;
+    line-height: 40px;
+    margin: 20px 0 80px 0;
+    bottom: 10%;
+  }
+
+  #coming-soon2 .beta:last-child {
+    margin-bottom: 0;
   }
   
   .gold-button,
@@ -202,7 +254,7 @@
     border-radius: 2px;
     cursor: pointer;
     padding: 0.5%;
-    z-index: 50;
+    z-index: 4;
     left: 48%;
   }
   
@@ -215,7 +267,47 @@
     transform: rotate(180deg);
     filter: drop-shadow( 0.3rem -0.2rem 4px var(--lightgrey));
   }
-  
+
+  #preview {
+    position: relative;
+    display: flex;
+    gap: 5% !important;
+    padding: 0 5%;
+    margin-bottom: 80px;
+  }
+
+  .phone-screenshot-container {
+    position: relative;
+    width: 191px;
+    height: 334px;
+    overflow: hidden;
+  }
+
+  .phone-screenshot-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .desktop-screenshot-container {
+    position: relative;
+    width: 760px;
+    height: 494px;
+    overflow: hidden;
+  }
+
+  .desktop-screenshot-container img {
+    z-index: 51 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
   /* footer */
   footer {
     position: relative;

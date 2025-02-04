@@ -1,6 +1,7 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
 let showSlide = (index) => {
     if (index >= slides.length) {
@@ -49,3 +50,22 @@ slides.forEach((slide) => {
         }
     });
 });
+
+// Function to update button visibility
+let updateButtonVisibility = () => {
+    if (currentSlide === 2) {
+        prev.style.display = 'none';
+        next.style.display = 'none';
+    } else {
+        prev.style.display = 'block';
+        next.style.display = 'block';
+    }
+}
+
+// Update button visibility on slide change
+slides.forEach((slide) => {
+    slide.addEventListener('wheel', updateButtonVisibility);
+});
+
+// Initial button visibility check
+updateButtonVisibility();

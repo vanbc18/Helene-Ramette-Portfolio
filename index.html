@@ -71,26 +71,44 @@
           </div>
           <!-- slide 3 -->
           <div id="coming-soon2" class="slide">
-            <h1 class="titles">à paraître</h1>
-            <p class="descriptions">
-              La refonte ergonomique et visuelle d'un site-outil. Une visionneuse de
-              publication à destination d'un public littéraire.
-            </p>
-            <a href="#" target="_self" class="grey-button move-mobile">
-              l'étude de cas n'est pas encore disponible
-            </a>
-            <div class="rect blue-bg-color push-left first"></div>
-            <div class="rect blue-bg-color push-left second"></div>
-            <div class="rect gold-bg-color push-left third"></div>
+            <h1 class="titles">version bêta <img class="icon-title" src="arrow-right.svg" alt=""> 1.0</h1>
+            <h2>Ce site est vivant : En le visitant dans 1 mois, pas mal de choses auront changé, mais quoi ?</h2>
+            <ul class="beta">
+              <li>Modification de l'architecture de l'accueil pour concorder avec les méta-données Google</li>
+              <li>Alignement graphique entre le CV / la page Linkedin / Le site</li>
+              <li>Redesign des wireframes des 3 pages principales du site (en accord avec l'alignement)</li>
+              <li>& toujours du full-custom, pas de CMS, pas de mock-up de site...</li>
+            </ul>
+            
+            <div id="preview">
+              <a href="Wireframe Iphone.png" target="_blank" class="phone-screenshot-container">
+                <img src="Wireframe Iphone.png" alt="a screenshot of the future mobile version of the website">
+              </a>
+              <a href="Wireframe Desktop.png" target="_blank" class="desktop-screenshot-container">
+                <img src="Wireframe Desktop.png" alt="a screenshot of the future desktop version of the website">
+              </a>
+            </div>
+
+            <h2>Et pour la suite ? A quoi s'attendre en 1.1 ?</h2>
+            <ul class="beta">
+              <li>Ajout de la page CGV</li>
+              <li>Ajout de la page mentions légales / CGU</li>
+              <li>Ajout d'un autre projet</li>
+              <li>Ajout de la fonctionnalité télécharger le CV PDF</li>
+              <li>Ajout d'un formulaire de contact</li>
+              <li>Intégration de Google Analytics dans les process d'amélioration continue</li>
+            </ul>
+            <!--
             <div class="img-container">
               <img src="Rectangle-Triangle-NU.svg" alt="quadrilater" class="img-top">
               <img src="young-student-looking-book-library 1.png" alt="a professional video camera" class="bg-img">
             </div>
+            -->
           </div>
         </div>
       </div>
-      <button class="prev" onclick="changeSlide(-1)"><img src="arrow-down.svg" alt="a white arrow pointing upward" class="upward"></button>
-      <button class="next" onclick="changeSlide(1)"><img src="arrow-down.svg" alt="a white arrow pointing downward" class="downward"></button>
+      <button class="prev" onclick="changeSlide(-1), updateButtonVisibility()"><img src="arrow-down.svg" alt="a white arrow pointing upward" class="upward"></button>
+      <button class="next" onclick="changeSlide(1), updateButtonVisibility()"><img src="arrow-down.svg" alt="a white arrow pointing downward" class="downward"></button>
       <!-- end slider -->
     </main>
 
